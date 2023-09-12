@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'SoDo Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+img {
+  max-width: 100%;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 23px 28px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.06),
+    0 0 2px rgba(0, 0, 0, 0.07);
+  z-index: 4;
+}
+
+.logo img {
+  width: 50px;
+}
+#starbucks-latin-america-stories img {
+  width: 120px;
+}
+.nav-left-side {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.nav-left-side a {
+  margin: 0 12px;
+  color: #32312d;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+.nav-left-side a:last-child {
+  margin-right: 0;
+}
+.nav-right-side {
+  display: flex;
+  align-items: center;
+}
+.nav-right-side a {
+  margin: 0 12px;
+  color: #32312d;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+.nav-right-side a:first-child {
+  margin-left: 0;
+}
+#location-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+}
+#location-icon img {
+  width: 19px;
+  color: black;
+}
+#btn-login {
+  padding: 7px 12px;
+  border: 1px solid #212121;
+  color: #212121;
+  border-radius: 40px;
+}
+#btn-join {
+  background: #212121;
+  color: #fff;
+  padding: 7px 12px;
+  border: 1px solid #212121;
+  border-radius: 40px;
+  white-space: nowrap;
+}
+/* 
+===============
+  Hero Section
+===============
+ */
+.hero {
+  margin: 0 auto;
+  width: 1440px;
+  max-width: 100%;
+}
+
+.slider {
+  display: flex;
+  overflow: hidden;
+}
+.slide {
+  display: flex;
+  transform: translateX(-0%);
+}
+.slide img {
+  width: 100%;
+  max-width: 1440px;
+  object-fit: cover;
+}
+@media screen and (max-width: 1130px) {
+  #btn-join {
+    display: none;
+  }
+  header {
+    padding: 23px 0;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  #btn-login {
+    display: none;
+  }
+}
+@media screen and (max-width: 780px) {
+  #location-icon {
+    display: none;
+  }
+}
+@media screen and (max-width: 770px) {
+  #starbucks-latin-america-stories {
+    display: none;
+  }
+}
