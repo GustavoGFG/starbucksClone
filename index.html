@@ -6,19 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Starbucks Clone</title>
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/53a00de455.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
-      <div class="nav-left-side">
-        <a class="logo" href="#"
+      <nav class="nav-left-side">
+        <a id="logo" href="#"
           ><img src="./assets/starbucks-nav-logo.svg" alt=""
         /></a>
-        <a href="#">MENU</a>
-        <a href="#">REWARDS</a>
-        <a href="#">NOSSO CAFÉ</a>
-        <a href="#">IMPACTO SOCIAL</a>
-      </div>
-      <div class="nav-right-side">
+        <ul>
+          <li><a href="#">MENU</a></li>
+          <li><a href="#">REWARDS</a></li>
+          <li><a href="#">NOSSO CAFÉ</a></li>
+          <li><a href="#">IMPACTO SOCIAL</a></li>
+        </ul>
+      </nav>
+      <nav class="nav-right-side">
         <a id="starbucks-latin-america-stories" href="#"
           ><img src="./assets/sb-historias-logo.svg" alt=""
         /></a>
@@ -28,16 +34,24 @@
         >
         <a id="btn-login" href="#">Entrar</a>
         <a id="btn-join" href="#">Participe agora</a>
-      </div>
+      </nav>
+      <a href="" class="menu-icon"><i class="fa-solid fa-bars"></i></a>
     </header>
     <div class="hero">
       <div class="slider">
-        <div class="slide">
-          <img src="./assets/banner-season-drinks.png" alt="" />
-          <img src="./assets/banner-rewards.png" alt="" />
-          <img src="./assets/banner-matcha.png" alt="" />
+        <button class="arrow" id="arrow-left" >
+          <img src="./assets/left-chevron-svgrepo-com.svg" alt=""></i>
+        </button>
+        <button class="arrow" id="arrow-right" >
+          <img src="./assets/left-chevron-svgrepo-com.svg" alt="">
+        </button>
+        <div id="slide">
+          <img class="slide-img" src="./assets/banner-season-drinks.png" alt="" />
+          <img class="slide-img" src="./assets/banner-rewards.png" alt="" />
+          <img class="slide-img" src="./assets/banner-matcha.png" alt="" />
         </div>
       </div>
     </div>
+    <script src="./imageslider.js"></script>
   </body>
 </html>
