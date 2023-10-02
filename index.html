@@ -46,11 +46,24 @@
           <img src="./assets/left-chevron-svgrepo-com.svg" alt="">
         </button>
         <div id="slide">
-          <img class="slide-img" src="./assets/banner-1.png" alt="" />
-          <img class="slide-img" src="./assets/banner-2.png" alt="" />
-          <img class="slide-img" src="./assets/banner-3.png" alt="" />
+          <picture class="slide-img">
+            <source media="(max-width: 770px)" srcset="./assets/banner-1-mobile.png">
+            <source srcset="./assets/banner-1.png">
+            <img   src="./assets/banner-1.png" alt="" />   
+          </picture>
+          <picture class="slide-img">
+            <source media="(max-width: 770px)" srcset="./assets/banner-2-mobile.png">
+            <source srcset="./assets/banner-2.png">
+            <img src="./assets/banner-2.png" alt="" />   
+          </picture>
+          <picture class="slide-img">
+            <source media="(max-width: 770px)" srcset="./assets/banner-3-mobile.png">
+            <!-- <source srcset="./assets/banner-2.png"> -->
+            <img src="./assets/banner-3.png" alt="" />   
+          </picture>
         </div>
       </div>
+      
     </div>
     <script src="./imageslider.js"></script>
   </body>

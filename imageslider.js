@@ -2,11 +2,11 @@ const slideContainer = document.querySelector('.slider');
 const slide = document.querySelector('#slide');
 const nextBtn = document.getElementById('arrow-right');
 const prevBtn = document.getElementById('arrow-left');
-const interval = 4000;
+const interval = 3000;
 
 let slides = document.querySelectorAll('.slide-img');
-console.log(slides);
 let index = 1;
+console.log(slides);
 let slideId;
 
 const firstClone = slides[0].cloneNode(true);
