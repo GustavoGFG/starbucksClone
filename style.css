@@ -4,6 +4,11 @@
   box-sizing: border-box;
   font-family: 'SoDo Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+:root {
+  --background-section-color: #d4e9e2;
+  --text-color: #1e3932;
+}
+
 /* img {
   max-width: 100%;
 } */
@@ -120,10 +125,12 @@ header {
   Hero Section
 ===============
  */
-.hero {
+.hero,
+.container {
   margin: 0 auto;
   width: 1440px;
   max-width: 100%;
+  margin-bottom: 32px;
 }
 
 .slider {
@@ -179,6 +186,24 @@ header {
   width: 22px;
   transform: rotateZ(180deg);
 }
+.dot-row {
+  position: absolute;
+  display: flex;
+  gap: 8px;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.dot {
+  background: rgba(0, 0, 0, 0.5);
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+.dot-selected {
+  background: rgba(255, 255, 255, 0.5);
+}
 #slide {
   display: flex;
   width: 1440px;
@@ -198,6 +223,118 @@ header {
   max-width: 100%;
   object-fit: cover;
 }
+/* 
+==========
+  MISSÃO
+==========
+*/
+.mission {
+  background: var(--background-section-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px clamp(60px, 20%, 300px) 32px;
+}
+.mission p {
+  font-size: 18px;
+  line-height: 32px;
+  color: var(--text-color);
+  font-weight: 400;
+  margin-bottom: 34px;
+  text-align: center;
+}
+.btn {
+  text-decoration: none;
+  padding: 5px 18px 7px;
+  border-radius: 35px;
+  border: 1px solid var(--text-color);
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--text-color);
+  font-weight: 600;
+}
+.mission a:hover {
+  transform: scale(0.92);
+  background: rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+/* 
+===============
+  APP SECTION
+===============
+ */
+.container {
+  background: var(--background-section-color);
+  color: var(--text-color);
+}
+.flex {
+  display: flex;
+}
+.app-section {
+  display: flex;
+}
+
+.section-img-container {
+  width: 50%;
+  aspect-ratio: 72/42;
+  /* border: 1px solid red; */
+  background-image: url('./assets/app-section-img.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.section-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 7%;
+}
+.section-text-title {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.section-text-body {
+  margin: 30px 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+/* 
+=================
+  DRINK-SECTION
+=================
+ */
+.drink-section .section-img-container {
+  background-image: url('./assets/drink-section-img.png');
+}
+.section-text-body span {
+  font-weight: bold;
+}
+/* 
+=========================
+  SOCIAL-IMPACT-SECTION
+=========================
+ */
+.social-impact-section .section-img-container {
+  background-image: url('./assets/social-impact-img.png');
+}
+/* 
+=========================
+  NEWS-SECTION
+=========================
+ */
+.news-section .section-img-container {
+  background-image: url('./assets/news-section-img.png');
+}
+
 /* 
 ==============
   RESPONSIVE
@@ -266,5 +403,33 @@ header {
     width: 770px;
     max-width: 100%;
     object-fit: cover;
+  }
+  /* 
+  MISSÃO
+
+   */
+
+  .mission p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  /* 
+  APP SECTION
+   */
+  .app-section,
+  .flex {
+    flex-direction: column;
+  }
+  .flex-inverted {
+    flex-direction: column-reverse;
+  }
+  .section-img-container,
+  .section-text {
+    width: 100%;
+  }
+  .section-text-body {
+    font-size: 14px;
+    padding: 0 5%;
+    line-height: 25px;
   }
 }

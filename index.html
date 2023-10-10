@@ -37,34 +37,78 @@
       </nav>
       <a href="" class="menu-icon"><i class="fa-solid fa-bars"></i></a>
     </header>
-    <div class="hero">
-      <div class="slider">
-        <button class="arrow" id="arrow-left" >
-          <img src="./assets/left-chevron-svgrepo-com.svg" alt=""></i>
-        </button>
-        <button class="arrow" id="arrow-right" >
-          <img src="./assets/left-chevron-svgrepo-com.svg" alt="">
-        </button>
-        <div id="slide">
-          <picture class="slide-img">
-            <source media="(max-width: 770px)" srcset="./assets/banner-1-mobile.png">
-            <source srcset="./assets/banner-1.png">
-            <img   src="./assets/banner-1.png" alt="" />   
-          </picture>
-          <picture class="slide-img">
-            <source media="(max-width: 770px)" srcset="./assets/banner-2-mobile.png">
-            <source srcset="./assets/banner-2.png">
-            <img src="./assets/banner-2.png" alt="" />   
-          </picture>
-          <picture class="slide-img">
-            <source media="(max-width: 770px)" srcset="./assets/banner-3-mobile.png">
-            <!-- <source srcset="./assets/banner-2.png"> -->
-            <img src="./assets/banner-3.png" alt="" />   
-          </picture>
+    <main>
+      <section class="hero">
+        <div class="slider">
+          <button class="arrow" id="arrow-left" >
+            <img src="./assets/left-chevron-svgrepo-com.svg" alt=""></i>
+          </button>
+          <button class="arrow" id="arrow-right" >
+            <img src="./assets/left-chevron-svgrepo-com.svg" alt="">
+          </button>
+          <div class="dot-row">
+            <div class="dot dot-selected"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+          <div id="slide">
+            <picture class="slide-img">
+              <source media="(max-width: 770px)" srcset="./assets/banner-1-mobile.png">
+              <source srcset="./assets/banner-1.png">
+              <img   src="./assets/banner-1.png" alt="" />   
+            </picture>
+            <picture class="slide-img">
+              <source media="(max-width: 770px)" srcset="./assets/banner-2-mobile.png">
+              <source srcset="./assets/banner-2.png">
+              <img src="./assets/banner-2.png" alt="" />   
+            </picture>
+            <picture class="slide-img">
+              <source media="(max-width: 770px)" srcset="./assets/banner-3-mobile.png">
+              <source srcset="./assets/banner-3.png">
+              <img src="./assets/banner-3.png" alt="" />   
+            </picture>
+          </div>
         </div>
-      </div>
-      
-    </div>
+      </section>
+      <section class="container mission">
+        <p>"A cada xícara, a cada conversa, com cada comunidade - Nós nutrimos infinitas possibilidades de conexão humana"</p>
+        <a href="#" class="btn">Saiba mais</a>
+      </section>
+      <section class="container flex app-section">
+        <div class="section-img-container">
+          <!-- <img src="./assets/app-section-img.png" alt="" class="section-img"> -->
+        </div>
+        <div class="section-text">
+          <h2 class="section-text-title">Sua pausa mais saborosa!</h2>
+          <p class="section-text-body">Você pode fazer seu pedido sem pegar filas, pedindo pelo aplicativo da Starbucks e retirando na sua loja preferida.</p>
+          <a href="" class="btn">Peça pelo app e retire na loja</a>
+        </div>
+      </section>
+      <section class="container flex flex-inverted drink-section ">
+        <div class="section-text">
+          <h2 class="section-text-title">Uma surpresa refrescante para você</h2>
+          <p class="section-text-body">Conheça nossa linha de <span>Cold Brew e Refreshers</span>&#8482;</p>
+          <a href="" class="btn">Saiba mais</a>
+        </div>
+        <div class="section-img-container"></div>
+      </section>
+      <section class="container flex social-impact-section">
+        <div class="section-img-container"></div>
+        <div class="section-text">
+          <h2 class="section-text-title">Coisas boas estão acontecendo</h2>
+          <p class="section-text-body">Acreditamos que podemmos e devemos gerar um impacto positivo nas comunidades que atuamos.</p>
+          <a href="" class="btn">Saiba mais</a>
+        </div>
+      </section>
+      <section class="container flex flex-inverted news-section ">
+        <div class="section-text">
+          <h2 class="section-text-title">Histórias e Notícias Starbucks</h2>
+          <p class="section-text-body">Fique por dentro das novidades e conheça mais sobre nossas iniciativas.</p>
+          <a href="" class="btn">Saiba mais</a>
+        </div>
+        <div class="section-img-container"></div>
+      </section>
+    </main>
     <script src="./imageslider.js"></script>
   </body>
 </html>

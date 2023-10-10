@@ -26,12 +26,32 @@ const startSlide = () => {
   slideId = setInterval(() => {
     index++;
     slide.style.transform = `translateX(${-slideWidth * index}px)`;
-    slide.style.transition = '0.7s';
+    slide.style.transition = '0.3s';
   }, interval);
 };
 const getSlides = () => document.querySelectorAll('.slide-img');
+//
+//
+//
+const dotArray = document.querySelectorAll('.dot');
+console.log(dotArray);
+const defineSelectedDot = index => {
+  dotArray.forEach(item => item.classList.remove('dot-selected'));
+  if (slides[index].id === firstClone.id) {
+    dotArray[0].classList.add('dot-selected');
+  } else if (slides[index].id === lastClone.id) {
+    console.log(dotArray.length);
+    dotArray[dotArray.length - 1].classList.add('dot-selected');
+  } else {
+    dotArray[index - 1].classList.add('dot-selected');
+  }
+};
+//
+//
+//
 
 slide.addEventListener('transitionend', () => {
+  defineSelectedDot(index);
   slideWidth = slides[index].clientWidth;
   slides = getSlides();
   // console.log(slides);
@@ -54,18 +74,20 @@ slideContainer.addEventListener('mouseleave', () => {
   startSlide();
 });
 nextBtn.addEventListener('click', () => {
+  defineSelectedDot(index);
   slides = getSlides();
   if (index >= slides.length - 1) return;
   index++;
   slide.style.transform = `translateX(${-slideWidth * index}px)`;
-  slide.style.transition = '0.7s';
+  slide.style.transition = '0.3s';
 });
 prevBtn.addEventListener('click', () => {
+  defineSelectedDot(index);
   slides = getSlides();
   if (index <= 0) return;
   index--;
   slide.style.transform = `translateX(${-slideWidth * index}px)`;
-  slide.style.transition = '0.7s';
+  slide.style.transition = '0.3s';
 });
 
 startSlide();
