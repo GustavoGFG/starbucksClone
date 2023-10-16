@@ -7,6 +7,7 @@
 :root {
   --background-section-color: #d4e9e2;
   --text-color: #1e3932;
+  --footer-title-text: #32312d;
 }
 
 /* img {
@@ -325,14 +326,102 @@ header {
  */
 .social-impact-section .section-img-container {
   background-image: url('./assets/social-impact-img.png');
+  aspect-ratio: 72/48;
 }
 /* 
-=========================
+=================
   NEWS-SECTION
-=========================
+=================
  */
 .news-section .section-img-container {
   background-image: url('./assets/news-section-img.png');
+  aspect-ratio: 72/48;
+}
+/* 
+==========
+  FOOTER
+==========
+ */
+footer {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.7), 0 2px 8px 0 rgba(0, 0, 0, 0.5),
+    0 1px 5px 0 rgba(0, 0, 0, 0.1);
+  padding: 45px 40px 45px 140px;
+}
+.footer-nav {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin-bottom: 60px;
+}
+.footer-nav .col {
+  width: 183px;
+}
+.footer-nav .col h1 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  color: var(--footer-title-text);
+  margin-bottom: 30px;
+}
+.footer-nav .col ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.footer-nav .col a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 0px;
+  color: rgba(0, 0, 0, 0.57);
+}
+.footer-nav .col a:hover {
+  color: rgba(0, 0, 0, 0.97);
+}
+.footer-nav img {
+  width: 120px;
+  display: block;
+  cursor: pointer;
+}
+.footer-section {
+  border-top: 2px solid #e0dcdc;
+}
+.policy {
+  margin-top: 35px;
+  margin-bottom: 45px;
+  display: flex;
+  gap: 15px;
+  list-style: none;
+}
+.policy li a {
+  color: var(--footer-title-text);
+  font-size: 15px;
+  font-weight: 400;
+  padding-right: 15px;
+  text-decoration: none;
+}
+.policy li a {
+  border-right: 1px solid black;
+}
+#ultimo a {
+  border-right: none;
+}
+.social-links {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  margin-top: 55px;
+  margin-left: 5px;
+}
+.social-links img {
+  width: 32px;
+}
+.footer-section h4 {
+  font-size: 15px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.56);
+  margin-bottom: 30px;
 }
 
 /* 
