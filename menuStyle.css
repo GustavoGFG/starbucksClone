@@ -1,0 +1,92 @@
+:root {
+  --background-section-color: #f2efed;
+  --text-color: #1e3932;
+  --footer-title-text: #000000;
+  --starbucks-logo-color: #008248;
+}
+
+/* HEADER MENU */
+.nav-left-side li:nth-child(1) a {
+  border-bottom: 6px solid var(--starbucks-logo-color);
+}
+/* HERO */
+.menu-section {
+  background-color: white;
+  display: flex;
+}
+.container {
+  margin-bottom: 0px;
+}
+
+.section-img-container {
+  flex-basis: 75%;
+  width: 100%;
+  max-width: 840px;
+  aspect-ratio: 117.6/71.2;
+  background-image: url('./assets/menu-banner.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  /* margin-top: -1px; */
+}
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  padding: 0px 0px 20px;
+  color: #32312d;
+}
+.menu-section a {
+  text-decoration: none;
+  color: #008248;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+.menu-section h2 {
+  line-height: 24px;
+  font-size: 18px;
+}
+.menu-section p {
+  font-size: 11px;
+  line-height: 12px;
+  margin: 27px 0px;
+  color: #1e3932;
+  font-weight: 400;
+}
+.nutritional-value-tables {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+  gap: 35px;
+}
+.section-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background: var(--background-section-color);
+  position: relative;
+  padding: 20px 55px;
+}
+.section-text::before {
+  content: '';
+  position: absolute;
+  height: 5px;
+  width: 60px;
+  background: #004f34;
+  left: -30px;
+}
+@media (max-width: 993px) {
+  .section-text {
+    flex-basis: 75%;
+  }
+}
+@media (max-width: 770px) {
+  .container {
+    flex-direction: column;
+  }
+  .nav-left-side li:nth-child(1) a {
+    border: none;
+  }
+}
