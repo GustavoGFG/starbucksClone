@@ -6,7 +6,7 @@
 /* TITLE */
 main .title-container {
   background: #f2efed;
-  padding: 15px 132px 21px;
+  padding: 15px 5% 21px;
 }
 h1 {
   font-size: 14px;
@@ -173,7 +173,7 @@ h3 {
     align-items: center;
   }
   aside .aside-logo-container img {
-    width: 10vh;
+    width: clamp(120px, 10vh, 100%);
     max-width: 100%;
   }
   aside .aside-logo-container p {

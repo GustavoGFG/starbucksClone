@@ -55,11 +55,14 @@ window.addEventListener('resize', e => {
     console.log(window.innerWidth);
     asideLogoContainer.style.position = 'static';
     asideText.style.position = 'static';
+    asideText.style.width = '100%';
   } else if (this.scrollY >= height) {
     asideLogoContainer.style.position = 'absolute';
     asideText.style.position = 'absolute';
+    asideText.style.width = '40%';
   } else {
     asideLogoContainer.style.position = 'fixed';
     asideText.style.position = 'fixed';
+    asideText.style.width = '40%';
   }
 });
