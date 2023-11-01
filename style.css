@@ -417,9 +417,6 @@ footer {
   flex-direction: column;
   gap: 25px;
 }
-.footer-nav .col ul li {
-  /* padding: 5px; */
-}
 .footer-nav .col a {
   text-decoration: none;
   font-size: 14px;

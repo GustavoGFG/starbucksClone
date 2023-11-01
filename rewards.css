@@ -1,20 +1,44 @@
 /* HEADER MENU */
-.nav-left-side li:nth-child(4) a {
+.nav-left-side li:nth-child(2) a {
   border-bottom: 6px solid var(--starbucks-logo-color);
 }
 /* MAIN */
 /* TITLE */
 main .title-container {
-  background: #f2efed;
-  padding: 15px 7% 21px;
+  background: #33433d;
+  padding: 7px 2% 8px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .title-container a {
+  text-decoration: none;
+  color: #fff;
 }
 h1 {
-  font-size: 14px;
+  text-decoration: none;
+  font-size: 13px;
   letter-spacing: 1px;
   font-weight: 700;
   line-height: 14px;
-  color: #32312d;
 }
+.join-btn {
+  background: transparent;
+  color: #fff;
+  padding: 5px 15px 7px;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  white-space: nowrap;
+  transition: all 0.3s;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.join-btn:hover {
+  transform: scale(0.9);
+  box-shadow: 0px 5px 5px -4px rgba(0, 0, 0, 0.65);
+}
+
 /* CONTENT CONTAINER */
 .content-container {
   display: flex;
@@ -44,27 +68,42 @@ aside .aside-logo-container {
   color: white;
   font-size: clamp(25px, 4vw, 40px);
   font-weight: bolder;
+  letter-spacing: 3px;
+}
+.aside-logo-container span {
+  margin: 0;
+  text-align: center;
+  color: white;
+  font-size: clamp(20px, 3.5vw, 35px);
+  margin-top: -8px;
+  font-weight: bolder;
+  letter-spacing: 3px;
 }
 .aside-text-container {
   position: fixed;
-  background: linear-gradient(to top, #070c0be3 0% 35%, #1f3a33);
+  background: linear-gradient(to top, #070c0be3 0% 30%, #1f3a33);
   bottom: 0%;
   width: 40%;
+  /* padding: 8.5% 6%; */
   height: 17%;
-  /* border: 1px solid blue; */
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  /* border: 1px solid blue; */
 }
 .aside-text-container p {
-  padding: 0% 14%;
-  width: 100%;
   font-size: 27px;
-  /* margin: 10% 7%; */
+  padding: 0% 115px;
   color: white;
   font-weight: 400;
-  /* line-height: 37px; */
-  letter-spacing: 3px;
+  line-height: 37px;
   /* border: 1px solid red; */
+  margin-bottom: 25px;
+}
+.aside-text-container div {
+  display: flex;
+  gap: 16px;
+  padding: 0% 115px 65px;
 }
 /* SECTION */
 section {
@@ -152,11 +191,15 @@ h3 {
   border: none;
   outline: none;
 }
+
 @media (max-width: 1280px) {
   .aside-text-container p {
     padding: 0% 40px 20px;
     margin-bottom: 0px;
     /* line-height: 30px; */
+  }
+  .aside-text-container div {
+    padding: 0% 40px 65px;
   }
 }
 @media (max-width: 995px) {
@@ -167,7 +210,7 @@ h3 {
   aside {
     flex-basis: 100%;
     background: #1f3a33;
-    min-height: 70vh;
+    min-height: 60vh;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -191,17 +234,20 @@ h3 {
   aside .aside-logo-container p {
     text-align: center;
     color: white;
-    /* font-size: 20px; */
-    letter-spacing: 2px;
+    /* font-size: clamp(20px, 4vw, 40px); */
+    letter-spacing: 0px;
     font-weight: bolder;
+  }
+  .aside-logo-container span {
+    margin-bottom: 50px;
   }
   .aside-text-container {
     position: static;
-    background: linear-gradient(to top, #070c0be3 0% 5%, #1f3a33);
+    background: linear-gradient(to top, #070c0be3 0% 40%, #1f3a33);
     width: 100%;
     margin: 0;
-    height: 10vh;
-    padding-bottom: 50px;
+    height: 20vh;
+    /* padding-bottom: 50px; */
   }
   .aside-text-container p {
     font-size: 27px;
@@ -233,11 +279,11 @@ h3 {
   }
 }
 @media (max-width: 770px) {
-  .nav-left-side li:nth-child(4) a {
+  .nav-left-side li:nth-child(2) a {
     border: none;
   }
   main .title-container {
-    padding: 15px 2% 21px;
+    padding: 7px 2% 8px 2%;
   }
   .flex {
     padding: 0px 12%;

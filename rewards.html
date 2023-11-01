@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Starbucks Clone</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="menuStyle.css" />
+    <!-- <link rel="stylesheet" href="menuStyle.css" /> -->
+    <link rel="stylesheet" href="./rewards.css" />
     <script
       src="https://kit.fontawesome.com/53a00de455.js"
       crossorigin="anonymous"
@@ -17,7 +18,7 @@
       <a id="logo" href="./"
         ><img src="./assets/starbucks-nav-logo.svg" alt=""
       /></a>
-      <button id="mobile-menu" class="menu-icon">
+      <button href="#" id="mobile-menu" class="menu-icon">
         <i class="fa-solid fa-bars"></i>
       </button>
       <div id="mobile-background" class="site-black-opacity-mobile-menu"></div>
@@ -50,41 +51,96 @@
     </header>
 
     <main>
-      <section class="container menu-section">
-        <div class="section-img-container">
-          <!-- <img src="./assets/app-section-img.png" alt="" class="section-img"> -->
-        </div>
-        <div class="section-text">
-          <h1>CARDÁPIO</h1>
-          <a
-            target="_blank"
-            href="https://manyplaces-p.s3-sa-east-1.amazonaws.com/starbucks/site/cardapio-sb-brasil.pdf"
-            ><h2 class="section-text-title">
-              Clique aqui para acessar nosso<br />Cardápio Digital*
-            </h2></a
-          >
-          <p class="section-text-body">
-            *Cardápio sem preço<br />Consulte os nossos baristas para saber mais
-          </p>
-          <div class="nutritional-value-tables">
-            <a
-              target="_blank"
-              href="https://manyplaces-p.s3-sa-east-1.amazonaws.com/starbucks/site/tabela_nutricional_bebidas.pdf"
-              >Tabela Nutricional<br />Bebidas</a
-            >
-            <a
-              target="_blank"
-              href="https://manyplaces-p.s3-sa-east-1.amazonaws.com/starbucks/site/tabela_nutricional_food.pdf"
-              >Tabela Nutricional<br />Comidas</a
-            >
+      <div id="social-impact-title" class="title-container">
+        <h1><a href="./rewards.html">STARBUCKS® REWARDS</a></h1>
+        <a href="" class="join-btn">Participe agora</a>
+      </div>
+      <div class="content-container">
+        <aside>
+          <div id="aside-logo-container" class="aside-logo-container">
+            <img src="./assets/starbucks-nav-logo.svg" alt="" width="170vh" />
+            <p>STARBUCKS</p>
+            <span>REWARDS</span>
           </div>
-          <a
-            target="_blank"
-            href="https://manyplaces-p.s3-sa-east-1.amazonaws.com/starbucks/site/Tabela_Alergenicos_Bebidas_2019.pdf"
-            >Tabela de<br />Alergênicos</a
-          >
-        </div>
-      </section>
+          <div id="aside-text-container" class="aside-text-container">
+            <p>Participar é fácil e rápido</p>
+            <div>
+              <a href="" class="join-btn">Participe agora</a>
+              <a href="" class="join-btn">Entrar</a>
+            </div>
+          </div>
+        </aside>
+        <section>
+          <div class="video-section-container">
+            <h2>Uma empresa que trabalha com responsabilidade social</h2>
+            <iframe
+              width="100%"
+              height="500"
+              src="https://www.youtube.com/embed/X9g6Z0FYTn8"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen=""
+            ></iframe>
+          </div>
+
+          <div class="text-banner">
+            <h2>
+              Acreditamos que podemos e devemos gerar um impacto positivo nas
+              comunidades em que atuamos.
+            </h2>
+            <p>
+              Desde que abrimos nossa primeira loja em 1971, buscamos a
+              confiança e o respeito de nossos clientes, partners (como chamamos
+              os nossos colaboradores) e vizinhos. Como? Tendo responsabilidade
+              e fazendo coisas boas para o planeta e para as pessoas.
+            </p>
+          </div>
+          <div class="topic">
+            <div class="img-container">
+              <img src="./assets/social-impact-community.jpg" alt="" />
+            </div>
+            <div class="flex">
+              <h3>COMUNIDADE</h3>
+              <p class="socialImpact-paragraph">
+                Como bons vizinhos, sempre que podemos, nos envolvemos em
+                esforços locais para unir as pessoas e criar uma mudança
+                positiva.
+              </p>
+              <a class="btn" href="">Sabia mais</a>
+            </div>
+          </div>
+
+          <div class="topic">
+            <div class="img-container">
+              <img src="./assets/social-impact-enviroment.jpg" alt="" />
+            </div>
+            <div class="flex">
+              <h3>MEIO AMBIENTE</h3>
+              <p class="socialImpact-paragraph">
+                Estamos buscando formas de minimizar o impacto ambiental de
+                nossos produtos, lidar com as mudanças ambientais e inspirar
+                outros a fazerem o mesmo.
+              </p>
+              <a class="btn" href="">Sabia mais</a>
+            </div>
+          </div>
+
+          <div class="topic">
+            <div class="img-container">
+              <img src="./assets/social-impact-supply.jpg" alt="" />
+            </div>
+            <div class="flex">
+              <h3>FORNECIMENTO ÉTICO</h3>
+              <p class="socialImpact-paragraph">
+                Estamos comprometidos em comprar e servir o café da mais alta
+                qualidade, cultivado de forma responsável e comercializado com
+                ética para ajudar a criar um futuro melhor para os produtores.
+              </p>
+              <a class="btn" href="">Sabia mais</a>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
 
     <footer>
@@ -190,5 +246,6 @@
     <script src="./imageslider.js"></script>
     <script src="./mobile-menu.js"></script>
     <script src="./footer-nav-list-click.js"></script>
+    <script src="./scrollTo.js"></script>
   </body>
 </html>

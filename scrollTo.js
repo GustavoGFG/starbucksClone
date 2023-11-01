@@ -6,6 +6,7 @@ window.addEventListener('scroll', e => {
   let bodyheight = document.body.clientHeight;
   let height = bodyheight - window.innerHeight - footerHeight;
   let asideText = document.getElementById('aside-text-container');
+  let asideTextPhrase = document.querySelector('.aside-text-container p');
 
   if (window.innerWidth >= 995) {
     if (this.scrollY >= height) {
@@ -21,17 +22,21 @@ window.addEventListener('scroll', e => {
     if (this.scrollY >= height) {
       asideText.style.position = 'absolute';
       asideText.style.bottom = `0px`;
-      // asideText.style.left = '50%';
-      asideText.style.padding = '9% 15%';
+      // asideText.style.bottom = `0px`;
+      // asideText.style.left = '0%';
+      // asideText.style.padding = '25% 17.5%';
+      // asideText.style.padding = '9% 15%';
+      // asideTextPhrase.style.margin = '0% 7%';
       asideText.style.width = '100%';
       asideText.style.height = '5%';
     } else if (this.scrollY < height) {
       asideText.style.position = 'fixed';
       asideText.style.bottom = `0`;
       // asideLogoContainer.style.left = '20%';
-      asideText.style.padding = '5.5%';
+      // asideText.style.padding = '5.5%';
+      // asideText.style.padding = '10% 7%';
       asideText.style.width = '40%';
-      asideText.style.height = '20%';
+      asideText.style.height = '17%';
     }
   }
 
@@ -52,7 +57,6 @@ window.addEventListener('resize', e => {
   let asideLogoContainer = document.getElementById('aside-logo-container');
   let asideText = document.getElementById('aside-text-container');
   if (window.innerWidth <= 995) {
-    console.log(window.innerWidth);
     asideLogoContainer.style.position = 'static';
     asideText.style.position = 'static';
     asideText.style.width = '100%';
