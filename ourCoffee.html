@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Starbucks Clone</title>
     <link rel="stylesheet" href="style.css" />
-    <!-- <link rel="stylesheet" href="menuStyle.css" /> -->
-    <link rel="stylesheet" href="./socialImpact.css" />
+    <link rel="stylesheet" href="ourCoffeeStyle.css" />
     <script
       src="https://kit.fontawesome.com/53a00de455.js"
       crossorigin="anonymous"
@@ -26,7 +25,7 @@
         <ul class="nav-left-side">
           <li><a href="./menu.html">menu</a></li>
           <li><a href="#">rewards</a></li>
-          <li><a href="./ourCoffee.html">nosso café</a></li>
+          <li><a href="#">nosso café</a></li>
           <li><a href="./socialImpact.html">impacto social</a></li>
         </ul>
 
@@ -50,91 +49,85 @@
       </nav>
     </header>
 
-    <main>
-      <div id="social-impact-title" class="title-container">
-        <h1>IMPACTO SOCIAL</h1>
-      </div>
-      <div class="content-container">
-        <aside>
-          <div id="aside-logo-container" class="aside-logo-container">
-            <img src="./assets/starbucks-nav-logo.svg" alt="" width="170vh" />
-            <p>STARBUCKS</p>
-          </div>
-          <div id="aside-text-container" class="aside-text-container">
-            <p>IMPACTO SOCIAL</p>
-          </div>
-        </aside>
-        <section>
-          <div class="video-section-container">
-            <h2>Uma empresa que trabalha com responsabilidade social</h2>
-            <iframe
-              width="100%"
-              height="500"
-              src="https://www.youtube.com/embed/X9g6Z0FYTn8"
-              frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen=""
-            ></iframe>
+    <main class="flex-col">
+      <section class="container know-more-section">
+        <div class="section-img-container">
+          <!-- <img src="./assets/app-section-img.png" alt="" class="section-img"> -->
+        </div>
+        <div class="section-text">
+          <h1>EXPLORE NOSSOS CAFÉS</h1>
+          <h2 class="section-text-title">
+            Independente do seu gosto ou paladar, encontrará um café Starbucks®
+            perfeito para você.
+          </h2>
+
+          <a class="btn-green">SAIBA MAIS</a>
+        </div>
+      </section>
+
+      <section id="coffee-beans" class="container">
+        <div class="flex buttons-area">
+          <div id="formato-btn" class="flex button">
+            <div>
+              <img src="./assets/ourCoffee/whole-bean.png" alt="" />
+            </div>
+            <p>FORMATO</p>
           </div>
 
-          <div class="text-banner">
-            <h2>
-              Acreditamos que podemos e devemos gerar um impacto positivo nas
-              comunidades em que atuamos.
-            </h2>
-            <p>
-              Desde que abrimos nossa primeira loja em 1971, buscamos a
-              confiança e o respeito de nossos clientes, partners (como chamamos
-              os nossos colaboradores) e vizinhos. Como? Tendo responsabilidade
-              e fazendo coisas boas para o planeta e para as pessoas.
-            </p>
-          </div>
-          <div class="topic">
-            <div class="img-container">
-              <img src="./assets/social-impact-community.jpg" alt="" />
+          <div id="torra-btn" class="flex button button-active">
+            <div>
+              <img src="./assets/ourCoffee/other-roast.png" alt="" />
             </div>
-            <div class="flex">
-              <h3>COMUNIDADE</h3>
-              <p class="socialImpact-paragraph">
-                Como bons vizinhos, sempre que podemos, nos envolvemos em
-                esforços locais para unir as pessoas e criar uma mudança
-                positiva.
-              </p>
-              <a class="btn" href="">Sabia mais</a>
-            </div>
+            <p>TORRA</p>
           </div>
+        </div>
 
-          <div class="topic">
-            <div class="img-container">
-              <img src="./assets/social-impact-enviroment.jpg" alt="" />
+        <div id="formato" class="flex classification-container">
+          <div class="items-container">
+            <div class="item flex-col">
+              <img src="./assets/ourCoffee/whole-bean.png" alt="" />
+              <p>GRÃO INTEIRO</p>
             </div>
-            <div class="flex">
-              <h3>MEIO AMBIENTE</h3>
-              <p class="socialImpact-paragraph">
-                Estamos buscando formas de minimizar o impacto ambiental de
-                nossos produtos, lidar com as mudanças ambientais e inspirar
-                outros a fazerem o mesmo.
-              </p>
-              <a class="btn" href="">Sabia mais</a>
+            <div class="item flex-col">
+              <img src="./assets/ourCoffee/ground.png" alt="" />
+              <p>MOÍDO</p>
+            </div>
+            <div class="item flex-col">
+              <img src="./assets/ourCoffee/cold-brew.png" alt="" />
+              <p>CAFÉS GELADOS</p>
+            </div>
+            <div class="item flex-col">
+              <img src="./assets/ourCoffee/nespresso.png" alt="" />
+              <p>STARBUCKS® BY NESPRESSO</p>
             </div>
           </div>
+        </div>
 
-          <div class="topic">
-            <div class="img-container">
-              <img src="./assets/social-impact-supply.jpg" alt="" />
+        <div id="torra" class="flex classification-container show-category">
+          <div class="items-container">
+            <div class="item flex-col">
+              <img src="./assets/ourCoffee/blonde-roast.png" alt="" />
+              <p>TORRA CLARA STARBUCKS®</p>
             </div>
-            <div class="flex">
-              <h3>FORNECIMENTO ÉTICO</h3>
-              <p class="socialImpact-paragraph">
-                Estamos comprometidos em comprar e servir o café da mais alta
-                qualidade, cultivado de forma responsável e comercializado com
-                ética para ajudar a criar um futuro melhor para os produtores.
-              </p>
-              <a class="btn" href="">Sabia mais</a>
+            <div class="item flex-col">
+              <img src="./assets/ourCoffee/medium-roast.png" alt="" />
+              <p>TORRA MÉDIA</p>
+            </div>
+            <div class="item flex-col">
+              <img src="./assets/ourCoffee/dark-roast.png" alt="" />
+              <p>TORRA ESCURA</p>
+            </div>
+            <div class="item flex-col">
+              <img src="./assets/ourCoffee/flavored.png" alt="" />
+              <p>CAFÉS COM SABORES</p>
+            </div>
+            <div class="item flex-col">
+              <img src="./assets/ourCoffee/decaf.png" alt="" />
+              <p>CAFÉS DESCAFEINADOS</p>
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
 
     <footer>
@@ -237,9 +230,9 @@
       </div>
     </footer>
 
-    <script src="./imageslider.js"></script>
+    <!-- <script src="./imageslider.js"></script> -->
     <script src="./mobile-menu.js"></script>
     <script src="./footer-nav-list-click.js"></script>
-    <script src="./scrollTo.js"></script>
+    <script src="./ourCoffee.js"></script>
   </body>
 </html>
