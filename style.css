@@ -417,11 +417,14 @@ footer {
   flex-direction: column;
   gap: 25px;
 }
+.footer-nav .col ul li {
+  /* padding: 5px; */
+}
 .footer-nav .col a {
   text-decoration: none;
   font-size: 14px;
   font-weight: 400;
-  line-height: 0px;
+  line-height: 0;
   color: rgba(0, 0, 0, 0.57);
 }
 .footer-nav .col a:hover {
@@ -761,6 +764,19 @@ footer {
   }
   .footer-nav .col {
     width: 100%;
+  }
+  .footer-nav .col ul li {
+    padding: 0px;
+  }
+  .footer-nav .col ul li:first-child {
+    margin-top: 15px;
+  }
+  .footer-nav .col a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.57);
   }
   .footer-nav .col .title-container {
     display: flex;
